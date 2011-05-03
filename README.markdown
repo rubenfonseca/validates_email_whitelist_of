@@ -10,7 +10,7 @@ Usage
 
 Add the gem to your Rails Gemfile
 
-  gem 'validates_email_whitelist_of'
+    gem 'validates_email_whitelist_of'
 
 	class User < ActiveRecord::Base
 	  validates_email_whitelist_of :email, :whitelist => ['example.com', 'google.com']

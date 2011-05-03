@@ -4,7 +4,7 @@ spec = Gem::Specification.new do |s|
   s.version = '1.0.0'
   s.summary = 'Validates e-mail address format (RFC2822 and RFC3696) and whitelist the domain part.'
   s.description  = "Rails 2 and Rails 3 plugin. #{s.summary}"
-  s.extra_rdoc_files = ['README.rdoc', 'MIT-LICENSE']
+  s.extra_rdoc_files = ['README.markdown', 'MIT-LICENSE']
 
   s.files = `git ls-files`.split("\n")
   s.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
