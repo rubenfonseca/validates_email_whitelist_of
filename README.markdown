@@ -12,6 +12,8 @@ Add the gem to your Rails Gemfile
 
     gem 'validates_email_whitelist_of'
 
+Then on ActiveRecord 2.0+ you can do
+
 	class User < ActiveRecord::Base
 	  validates_email_whitelist_of :email, :whitelist => ['example.com', 'google.com']
 	end
