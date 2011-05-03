@@ -4,10 +4,12 @@ pt: &pt
       messages:
         invalid_email: "não parece ser um e-mail válido"
         invalid_whitelist: "não é um e-mail permitido"
+        invalid_blacklist: "não é um e-mail permitido"
   errors:
     messages:
       invalid_email: "não parece ser um e-mail válido"
       invalid_whitelist: "não é um e-mail permitido"
+      invalid_blacklist: "não é um e-mail permitido"
 
 pt-BR:
   <<: *pt

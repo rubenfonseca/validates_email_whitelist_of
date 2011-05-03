@@ -1,8 +1,8 @@
 spec = Gem::Specification.new do |s|
   s.name = 'validates_email_whitelist_of'
 
-  s.version = '1.0.2'
-  s.summary = 'Validates e-mail address format (RFC2822 and RFC3696) and whitelist the domain part.'
+  s.version = '1.1.0'
+  s.summary = 'Validates e-mail address format (RFC2822 and RFC3696) and whitelist/blacklist the domain part.'
   s.description  = "Rails 2 and Rails 3 plugin. #{s.summary}"
   s.homepage = 'https://github.com/rubenfonseca/validates_email_whitelist_of'
   s.extra_rdoc_files = ['README.markdown', 'MIT-LICENSE']

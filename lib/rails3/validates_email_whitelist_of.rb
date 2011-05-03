@@ -5,8 +5,12 @@ module ActiveModel
         if value.to_s !~ SimplesIdeias::ValidatesEmailWhitelistOf::EMAIL_FORMAT
           record.errors.add(attribute, :invalid_email, :default => options[:message], :value => value)
         else
-          unless (options[:whitelist] || []).include?($2)
+          if options[:whitelist] && !options[:whitelist].include?($2)
             record.errors.add(attribute, :invalid_whitelist, :default => options[:message], :value => value)
+          end
+
+          if options[:blacklist] && options[:blacklist].include?($2)
+            record.errors.add(attribute, :invalid_blacklist, :default => options[:message], :value => value)
           end
         end
       end
@@ -14,6 +18,10 @@ module ActiveModel
 
     module ClassMethods
       def validates_email_whitelist_of(*attr_names)
+        validates_with EmailWhitelistValidator, _merge_attributes(attr_names)
+      end
+
+      def validates_email_blacklist_of(*attr_names)
         validates_with EmailWhitelistValidator, _merge_attributes(attr_names)
       end
     end
