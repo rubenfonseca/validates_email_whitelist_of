@@ -4,6 +4,8 @@ module SimplesIdeias
   end
 end
 
+I18n.load_path += Dir[File.dirname(__FILE__) + "/../config/locales/*.yml"]
+
 if ActiveRecord::VERSION::STRING >= "3.0"
   require "rails3/validates_email_whitelist_of"
 else
