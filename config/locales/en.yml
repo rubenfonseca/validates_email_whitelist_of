@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        invalid_email: "is not a valid address"
+        invalid_whitelist: "is not an allowed email"
+  errors:
+    messages:
+      invalid_email: "is not a valid e-mail"
+      invalid_whitelist: "is not an allowed email"
