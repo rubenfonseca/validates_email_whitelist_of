@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    validates_email_whitelist_of (1.0.0)
+    validates_email_whitelist_of (1.1.0)
 
 GEM
   remote: http://rubygems.org/
